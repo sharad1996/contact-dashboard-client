@@ -1,0 +1,69 @@
+@import '~antd/dist/antd.css';
+#root, .App {
+  height: 100%;
+}
+
+.App {
+  text-align: center;
+}
+
+.nav {
+  background-color: #ffffff;
+  height: 50px;
+  text-align: left;
+  border-bottom: 1px solid #000;
+}
+
+.nav-content {
+  font-size: 16px;
+  margin-left: 25px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.search-box-container {
+  display: flex;
+  margin: 25px;
+}
+
+.add-contact {
+  margin-left: 10px
+}
+
+.ant-card-actions {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-card {
+  margin-left: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-card, .ant-card-body {
+  display: flex;
+}
+
+.contact-card, .ant-card-meta-title {
+  text-align: left;
+}
+
+.card-avtaar {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  padding-top: 8px;
+  background: #f1f1f1;
+  border-radius: 50%;
+}
+
+.container-box {
+  display: flex;
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 25px;
+  justify-content: space-around;
+  background: #f1f1f1;
+  padding: 8px;
+}
