@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react'
 import { useDispatch, useSelector } from "react-redux"
 import { Modal, Button } from 'antd'
 import { ContactForm } from './ContactForm'
-import { addUser, updateUser } from '../redux/user/operations'
-import { setIsEdit } from '../redux/user/actions'
+import { addUser, updateUser } from '../../redux/user/operations'
+import { setIsEdit } from '../../redux/user/actions'
 
 const AddContact = (props) => {
     const [visible, setVisible] = useState(false);
@@ -35,10 +35,11 @@ const AddContact = (props) => {
         <div className="add-contact">
             <Button
                 type="primary"
+                className="add-contact-button"
                 onClick={() => setVisible(true)}
             >
-                Add Contact
-                </Button>
+                + Add Contact
+            </Button>
             <Modal
                 title="Contact Details"
                 visible={visible}

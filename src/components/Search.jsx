@@ -3,13 +3,13 @@ import { Input } from 'antd'
 
 const { Search } = Input;
 
-export const SearchBox = () => {
+export const SearchBox = (props) => {
     return (
-        <div className="search">
+        <div>
             <Search
+                className="search-contact"
                 placeholder="Search Contact"
-                onSearch={value => console.log(value)}
-                style={{ width: 200 }}
+                onSearch={value => props.onChangeSearch(value)}
             />
         </div>
     );

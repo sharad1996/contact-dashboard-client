@@ -3,15 +3,17 @@ import {
   UPDATE_USER,
   DELETE_USER,
   GET_USER,
-  SET_IS_EDIT
+  SET_IS_EDIT,
+  SELECTED_USER,
+  CURRENT_USER
 } from './types'
 
 const initialState = {
-  currentUser: {},
   users: [],
-  isLoading: false,
   isEdit: false,
-  editedUser: {}
+  editedUser: {},
+  currentUser: {},
+  selectedUser: {}
 }
 
 const userReducer = (state = initialState, action) => {
@@ -47,6 +49,16 @@ const userReducer = (state = initialState, action) => {
         ...state,
         isEdit: action.isEdit,
         editedUser: action.user
+      }
+    case SELECTED_USER:
+      return {
+        ...state,
+        selectedUser: action.user
+      }
+    case CURRENT_USER:
+      return {
+        ...state,
+        currentUser: action.user
       }
     default:
       return state

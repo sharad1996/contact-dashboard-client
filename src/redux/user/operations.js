@@ -10,7 +10,7 @@ export const addUser = (payload) => {
   return dispatch => {
     axios.post('/user/addUser', payload)
       .then(res => {
-        dispatch(addUserData(res.data))
+        dispatch(addUserData(res.data.user))
       })
       .catch((err) => {
         if (err.response) console.log(err.response.data.msg)

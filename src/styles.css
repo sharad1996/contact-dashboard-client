@@ -9,16 +9,19 @@
 
 .nav {
   background-color: #ffffff;
-  height: 50px;
+  height: 35px;
   text-align: left;
   border-bottom: 1px solid #000;
 }
 
 .nav-content {
-  font-size: 16px;
-  margin-left: 25px;
-  font-weight: 500;
-  color: #000000;
+  width: 100px;
+  height: 100px;
+}
+
+.user-dropdown {
+  float: right;
+  margin-right: 20px;
 }
 
 .search-box-container {
@@ -26,8 +29,24 @@
   margin: 25px;
 }
 
+.search-contact {
+  width: 200px;
+  border-radius: 20px;
+  background: #f1f1f1;
+}
+
+.search-contact > .ant-input {
+  background: #f1f1f1;
+}
+
 .add-contact {
   margin-left: 10px
+}
+
+.add-contact-button, .add-contact-button:hover, .add-contact-button:active {
+  border-radius: 6px;
+  background-color: #fa7a80;
+  border: none;
 }
 
 .ant-card-actions {
@@ -41,12 +60,20 @@
   justify-content: space-between;
 }
 
-.contact-card, .ant-card-body {
+.contact-card > .ant-card-body {
   display: flex;
 }
 
-.contact-card, .ant-card-meta-title {
+.contact-card > .ant-card-body {
+  padding: 15px;
+}
+
+.contact-card > .ant-card-meta-title {
   text-align: left;
+}
+
+.ant-card-actions > li {
+  margin: 6px 0;
 }
 
 .card-avtaar {
@@ -54,7 +81,6 @@
   height: 40px;
   text-align: center;
   padding-top: 8px;
-  background: #f1f1f1;
   border-radius: 50%;
 }
 
@@ -63,7 +89,65 @@
   font-size: 14px;
   font-weight: bold;
   margin-left: 25px;
-  justify-content: space-around;
   background: #f1f1f1;
   padding: 8px;
+}
+
+.container-box-col {
+  text-align: left;
+  padding-left: 10px;
+}
+
+.contact-details {
+  width: 350px;
+  height: 450px;
+  margin: 0 20px;
+}
+
+.contact-details-card {
+  background-color: #f1f1f1;
+  height: 450px;
+}
+
+.card-details-avtaar {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  padding-top: 14px;
+  border-radius: 50%;
+}
+
+.card-details-meta {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-details-meta > .ant-card-meta-avatar {
+  padding-right: 0;
+}
+
+.contact-details-card > .ant-card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-detail-card > .ant-card-meta-title {
+  text-align: center;
+}
+
+.contact-details-meta > .ant-card-meta-avatar {
+  padding-right: 0;
+}
+
+
+.message-details {
+  width: 350px;
+  margin: 10px 20px;
+}
+
+.message-details-card {
+  background-color: #f1f1f1;
 }

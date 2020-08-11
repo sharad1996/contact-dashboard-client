@@ -4,3 +4,5 @@ export const UPDATE_USER = 'UPDATE_USER'
 export const DELETE_USER = 'DELETE_USER'
 
 export const SET_IS_EDIT = 'SET_IS_EDIT'
+export const SELECTED_USER = 'SELECTED_USER'
+export const CURRENT_USER = 'CURRENT_USER'

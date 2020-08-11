@@ -1,13 +1,13 @@
 import { combineReducers } from 'redux'
 
 // import reviewReducer from './Review/Reducers'
-import employeesReducer from './employee/reducer'
+import messageReducer from './message/reducer'
 import userReducer from './user/reducer'
 
 const rootReducer = combineReducers({
   // reviewReducer, 
   userReducer,
-  employeesReducer
+  messageReducer
 })
 
 export default rootReducer
